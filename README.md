@@ -1,12 +1,22 @@
 # espeak-ng-crystal
 
-Crystal bindings for eSpeak NG (Next Generation) Text-to-Speech program.
+**Status: BETA** Crystal bindings for eSpeak NG (Next Generation) Text-to-Speech shared library. 
 
 ## Installation
 
-...
-Coming soon™
-...
+Add this to your application's shard.yml:
+
+```yaml
+dependencies:
+  espeak-ng-crystal:
+    github: medvedu/espeak-ng-crystal
+```
+
+Then require the lib in your Crystal code:
+
+```crystal
+  require "espeak_ng"
+```
 
 ### ESpeak installation
 
@@ -15,9 +25,9 @@ Coming soon™
   $ sudo apt-get install espeak-ng-espeak 
 ```
 
-Or via official manual: [github](https://github.com/espeak-ng/espeak-ng)
+Or via official manual: [→ github page](https://github.com/espeak-ng/espeak-ng)
 
-### Additional voices installation
+### Custom voices installation (optional)
 
  See [mbrola](https://github.com/espeak-ng/espeak-ng/blob/master/docs/mbrola.md) page.
 
@@ -40,22 +50,33 @@ Or, via class instance:
 ```
 
 
-With pre-installed [b]mbrola[/b] and [b]mbrola-voices-de1[/b] packages it is possible to use third-party voices (f.e. German female voice used in example below):
+With pre-installed **mbrola** and **mbrola-voices-de1** packages it is possible to use third-party voices (f.e. German female voice used in example below):
 
 
 ```crystal sample_3.cr
-  require "../src/espeak"
-
   Olga = ESpeakNG.speaker({ speed: 115, lang: "mb-de1" })
   Olga.say "Hallo ich bin deutsches Mädchen!"
 ```
 
+## TODO
+
+  * tests
+  * add output to stdout | wav file
+
 ## Dependencies
 
-* Crystal 0.22.0
-* eSpeak NG [github](https://github.com/espeak-ng/espeak-ng)
-* mbrola 3.0.1h-5 (optional)
+  * Crystal 0.22.0
+  * eSpeak NG [→ github page](https://github.com/espeak-ng/espeak-ng)
+  * mbrola 3.0.1h-5 (optional)
+
+## Contributing
+
+  * Fork it ( https://github.com/mjago/soundfile/fork )
+  * Create your feature branch (git checkout -b my-new-feature)
+  * Commit your changes (git commit -am 'Add some feature')
+  * Push to the branch (git push origin my-new-feature)
+  * Create a new Pull Request
 
 ## License
 
-Released under the MIT License. See the [LICENSE](./LICENSE) file for further details.
+Released under the MIT License. See the [→ LICENSE](./LICENSE) file for further details.

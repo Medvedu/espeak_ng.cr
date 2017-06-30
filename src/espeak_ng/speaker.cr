@@ -7,7 +7,7 @@ module ESpeakNG
     getter! lang   : Language
     
     def initialize(opts = {} of Symbol => String|Int32|Nil)
-      @gap    = opts[:gap]?    ? opts[:gap]?.as(Int32)    : 2
+      @gap    = opts[:gap]?    ? opts[:gap]?.as(Int32)    : 10
       @speed  = opts[:speed]?  ? opts[:speed]?.as(Int32)  : 175
       @volume = opts[:volume]? ? opts[:volume]?.as(Int32) : 100
       @pitch  = opts[:pitch]?  ? opts[:pitch]?.as(Int32)  : 50
