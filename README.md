@@ -4,15 +4,26 @@
 
 ## Installation
 
-Add this to your application's shard.yml:
+1. Add this to your application's **shard.yml** file
 
 ```yaml
+name: &YOUR_APP_NAME
+version: &YOUR_APP_VERSION
+
 dependencies:
-  espeak-ng-crystal:
-    github: medvedu/espeak-ng-crystal
+  espeak_ng:
+    github: medvedu/espeak_ng.cr
+    version: ~> 0.3.3
 ```
 
-Then require the lib in your Crystal code:
+2. install shard
+
+```console
+  $ cd &YOUR_APP_DIR
+  $ shards install
+```
+
+3. and now you need to require the lib in your Crystal code:
 
 ```crystal
   require "espeak_ng"
