@@ -1,0 +1,6 @@
+docs/*
+
+*.lock
+
+*.sublime-project
+*.sublime-workspace
