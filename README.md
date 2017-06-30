@@ -2,7 +2,9 @@
 
 **Status: BETA** Crystal bindings for eSpeak NG (Next Generation) Text-to-Speech shared library. 
 
+
 ## Installation
+### Crystal installation
 
 1. Add this to your application's **shard.yml** file
 
@@ -29,7 +31,9 @@ dependencies:
   require "espeak_ng"
 ```
 
-### ESpeak installation
+
+### ESpeak shared-library installation
+
 
 ```console
   $ sudo apt-get update
@@ -38,13 +42,16 @@ dependencies:
 
 Or via official manual: [→ github page](https://github.com/espeak-ng/espeak-ng)
 
+
+**Note: linked against [→ 1.49.1 espeak-ng](https://github.com/espeak-ng/espeak-ng/releases/tag/1.49.1)**
+
+
 ### Custom voices installation (optional)
+
 
  See [mbrola](https://github.com/espeak-ng/espeak-ng/blob/master/docs/mbrola.md) page.
 
 ## Usage
-
-### Basic usage
 
 ```crystal sample.cr
   ESpeakNG.say("Message sent!")

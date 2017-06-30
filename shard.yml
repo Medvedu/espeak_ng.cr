@@ -9,6 +9,6 @@ description: |
    Crystal bindings for eSpeak NG (Next Generation) Text-to-Speech shared library.
 
 libraries: 
-  NGSpeakLib: "*"
+  NGSpeakLib: "1.49.1"
 
 license: MIT
