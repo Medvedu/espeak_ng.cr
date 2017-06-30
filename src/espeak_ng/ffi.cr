@@ -41,7 +41,7 @@ module ESpeakNG
     N_SPEECH_PARAM
   end
 
-  @[Link("espeak")]
+  @[Link("espeak-ng")]
   private lib NGSpeakLib
     
     fun init = espeak_Initialize(

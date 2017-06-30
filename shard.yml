@@ -1,7 +1,14 @@
 name: espeak_ng
 version: 0.3.3
+crystal: 0.22.0
 
 authors:
-  - Kuzichev Michael <kmedvedu@gmail.com>
+  - Kuzichev Michael
+
+description: |
+   Crystal bindings for eSpeak NG (Next Generation) Text-to-Speech shared library.
+
+libraries: 
+  NGSpeakLib: "*"
 
 license: MIT
